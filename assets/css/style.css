@@ -103,7 +103,7 @@ transform: scale(1.1);
     padding-top: 30px;
     width: 33%;
     float: left;
-    background-color: blue;
+    
  }
  #right-about {
     padding-top: 30px;
@@ -115,5 +115,12 @@ transform: scale(1.1);
     width: 33%;
     margin: 0 auto;
     background-color:green;
+ }
+ #left-about-heading {
+    width: 60%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 50px;
  }
 
