@@ -176,7 +176,7 @@ transform: scale(1.1);
     overflow: hidden;
 }
 #times div {
-    color: #fafafa;
+    color: #fafafa
     background-color: rgba(0, 0, 0,.6);
     width: 20%;
     height: 300px;
@@ -185,7 +185,26 @@ transform: scale(1.1);
     text-align: center;
     border: 2px solid white;
     box-sizing: border-box;
-
+}
+#times h2{
+    color: #3a3a3a;
+}
+footer {
+    height: 150px;
 
 }
+.social-networks {
+    text-align: center;
+
+}
+.social-networks > li {
+    display: inline;
+}
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #3a3a3a;
+}
+
 
