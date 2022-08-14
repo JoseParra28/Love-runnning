@@ -148,6 +148,8 @@ transform: scale(1.1);
 .right-about-heading p {
     text-align: right;
 }
+
+
 #circle-container{
     width: 300px;
     height: 300px;
@@ -162,6 +164,7 @@ transform: scale(1.1);
 #circle-cover-bg {
     background: url(../css/images/ethos-center-image.jpeg) no-repeat center center;
     height: 100%;
+    border-radius: 50%;
 
 }
 #times {
