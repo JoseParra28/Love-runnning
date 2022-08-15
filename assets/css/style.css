@@ -129,14 +129,14 @@ transform: scale(1.1);
  }
  .left-about-heading{
     width: 60%;
-    float: right;
+    float: left;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
 }
 .right-about-heading {
     width: 60%;
-    float: left;
+    float: right;
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
