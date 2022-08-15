@@ -122,6 +122,12 @@ transform: scale(1.1);
     margin: 0 auto;
     
  }
+ #times > div {
+    width: 100%;
+    clear: both;
+    height: 150px;
+    padding: 0%;
+ }
   hr {
     border-top: 1px solid #3a3a3a;
     width: 100%;
@@ -243,5 +249,46 @@ hr{
     display: none;
 }
 }
+@media screen and (max-width: 950px) {
+    #menu {
+        clear: left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+        
+    }
+    #cover-text {
+        left: 0;
+    }
+    #blub-ethos{
+        width: 90%;
+        height: 1200px;
+        margin-bottom: 0 auto;
+    }
+    .left-about-heading, .right-about-heading{
+        width: inherit;
+    }
+    .left-about-heading, .right-about-heading h2 {
+        width: 100%;
+        text-align: center;
+    }
+    .left-about-heading, .right-about-heading p{
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #gallery{
+        column-count: 3;
+
+    }
+}
+@media screen and (max-width: 800px) {
+    #gallery{
+        column-count: 2;
+
+    }
+}
+
 
 
