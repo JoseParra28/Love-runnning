@@ -5,10 +5,18 @@ document.write("<p>This is my first great test</p>")
 let names = "Jose";
 let job = "Programmer";
 
-// document.write(names,"is a", job);
+const greeting = "Hello";
+const num = 100;
 
-document.write(100 + Number("25") + "<br>");
-document.write(100 + parseInt("50")+ "<br>");
-document.write(100 + parseFloat("50.99")+ "<br>");
+document.getElementById("#btn");
 
-document.write("<button>Click here</button>");
+
+
+
+document.write(num + 10 * 2,  "<br>");
+document.write(greeting + " ", names + " ", job  + " ", Number(num / 2 ),   "<br>");
+
+
+
+
+
