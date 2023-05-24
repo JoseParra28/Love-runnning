@@ -30,17 +30,29 @@ document.write(luckyNums.length + "<br>")
 
 // objects\
 
-let student = {
-    usernmame: "Jose",
-    age: 29,
-    sector: "Programming"
+// let student = {
+//     usernmame: "Jose",
+//     age: 29,
+//     sector: "Programming"
+// }
+// student.usernmame = "Miguel"
+// document.write(student.usernmame + "<br>")
+// document.write(student.age + "<br>")
+// document.write(student.sector + "<br>")
+
+
+let sum = addNumber(155, 4890);
+document.write(sum)
+
+function addNumber(num1, num2){
+    return num1 + num2 * 2
 }
-student.usernmame = "Miguel"
-document.write(student.usernmame + "<br>")
-document.write(student.age + "<br>")
-document.write(student.sector + "<br>")
 
+let headers = document.getElementById("#myHeader");
 
+headers.addEventListener("Click", function(){
+    alert ("You clicked" + header.id)
+})
 
 
 
