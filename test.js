@@ -41,18 +41,33 @@ document.write(luckyNums.length + "<br>")
 // document.write(student.sector + "<br>")
 
 
-let sum = addNumber(155, 4890);
-document.write(sum)
+// let sum = addNumber(155, 4890);
+// document.write(sum)
 
-function addNumber(num1, num2){
-    return num1 + num2 * 2
-}
+// function addNumber(num1, num2){
+//     return num1 + num2 * 2
+// }
 
-let headers = document.getElementById("#myHeader");
+// let headers = document.getElementById("#myHeader");
 
-headers.addEventListener("Click", function(){
-    alert ("You clicked" + header.id)
-})
+// headers.addEventListener("Click", function(){
+//     alert ("You clicked" + header.id)
+// })
 
+// Assigment operators
+const now = 2023
+const ageA = now - 1993;
+const ageB = now - 1925;
+
+document.write(ageA / 2, ageB / 2, 2 ** 3 + "<br>")
+
+// Number operators
+
+let x = 10 + 5;
+x += 5;
+x *= 4;
+
+
+document.write(x + "<br>")
 
 
