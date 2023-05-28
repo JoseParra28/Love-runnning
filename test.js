@@ -15,18 +15,18 @@ document.write("<p>This is my first great test</p>")
 // let user = window.prompt("Enter you name ");
 // alert("Your name is " + user)
 
-let header = document.getElementById("myHeader");
+// let header = document.getElementById("myHeader");
 
-header.style="color: black; background-color: grey"
-document.write(header.getAttribute("giraffe"));
-header.innerHTML = "Elephant academy";
+// header.style="color: black; background-color: grey"
+// document.write(header.getAttribute("giraffe"));
+// header.innerHTML = "Elephant academy";
 
-//  errays
+// ----------------------------------------------- errays
 
-const luckyNums = [4, 8, 15, 16, "twenty", false];
+// const luckyNums = [4, 8, 15, 16, "twenty", false];
 
-luckyNums[0] = 90;
-document.write(luckyNums.length + "<br>")
+// luckyNums[0] = 90;
+// document.write(luckyNums.length + "<br>")
 
 // objects\
 
@@ -55,20 +55,20 @@ document.write(luckyNums.length + "<br>")
 // })
 
 // Assigment operators
-const now = 2023
-const ageA = now - 1993;
-const ageB = now - 1925;
+// const now = 2023
+// const ageA = now - 1993;
+// const ageB = now - 1925;
 
-document.write(ageA / 2, ageB / 2, 2 ** 3 + "<br>")
+// document.write(ageA / 2, ageB / 2, 2 ** 3 + "<br>")
 
-// Number operators
+// ---------------------------------Number operators
 
-let x = 10 + 5;
-x += 5;
-x *= 4;
+// let x = 10 + 5;
+// x += 5;
+// x *= 4;
 
 
-document.write(x + "<br>")
+// document.write(x + "<br>")
 
 // let theNumber = Number(prompt("Pick a number"));
 // if (!Number.isNaN(theNumber)){
@@ -183,3 +183,117 @@ document.write(x + "<br>")
 // let clotehsVar = clothes[0]
 // document.write(clotehsVar + "<br>")
 
+// -------------------------------erray methods
+/*
+ push()
+ unshift()
+ pop()
+ shift() 
+ sort()
+ reverse()
+*/
+
+// let fruit = ["apple", "<br>",
+//   "banana",  "<br>",
+//   "kiwi", "<br>",
+//   "blueberries", "<br>",
+//   "blackberries", "<br>",
+//   "pears", "<br>",
+//   "grapes", "<br>",
+//   "strawberries", "<br>",
+//   "papaya", "<br>",
+//   "raspberries"
+// ];
+
+// let fruitList = fruit.pop();
+// document.write(fruit + "<br>");
+// document.write(fruitList + "<br>");
+
+// fruit.sort()
+// document.write(fruit + "<br>");
+
+// let newFruit = fruit.slice(1, 3);
+// document.write(newFruit + "<br>"); 
+
+// newFruit.push("pineapple")
+// document.write(newFruit + "<br>"); 
+
+// --------------------------------------- objects
+// let profession = {
+//     name: "Jose Parra",
+//     age: "29",
+//     prpfession: "Software developer",
+//     hobby: "Gym and studing",
+// }
+// document.write(profession + "<br>"); 
+// console.log(profession)
+// -----------------------------------------------
+// let data = {
+//     firstName: "Arthur",
+//     lastName: "Dent",
+//     species: "Human"
+// };
+
+// add your code here
+// let firstName = data["firstName"];
+// console.log(firstName);
+
+// let species = data.species;
+// console.log(species);
+
+// data.age = 42;
+
+// console.log(data);
+// ----------------------------------------------- addign objects
+
+// let profile = {
+//     names: "Jose Parra",
+//     age: "29",
+//     prpfession: "Software developer",
+//     hobby: "Gym and studing",
+// };
+
+// let addSomething = profile["names"];
+// console.log(addSomething)
+
+// profile.location = "Dublin";
+// console.log(profile)
+ 
+// let countries = {
+//     europe: "Ireland",
+//     asia: "china",
+//     north_america: "Canada",
+//     south_america: "Venezuela",
+// }
+
+// let select = countries["europe"];
+// console.log(select)
+
+// countries.central_america = "Puerto rico"
+// console.log(countries)
+// ---------------------------------------Iterating Data Structures
+// let ages = {
+//     jose: "22",
+//     miguel: "49",
+//     antuan: "39",
+//     felipe: "33",
+//     maria: "22",
+//     manuel: "24"
+// }
+
+// for (let data in ages){
+//     document.write(`${data} is ages ${ages[data]}`);
+// }
+
+// let money = {
+//     jose: "developer",
+//     miguel: "lawer",
+//     antuan: "teacher",
+//     felipe: "sales agent",
+//     maria: "student",
+//     manuel: "machanic"
+// }
+
+// for ( let account in money ){
+//     document.write(`${account} is a  ${money[account]} in Irelang`);
+// }
