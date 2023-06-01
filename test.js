@@ -1,6 +1,6 @@
-document.write("<h1>Hello there</h1>");
-document.write("<hr>");
-document.write("<p>This is my first great test</p>")
+// document.write("<h1>Hello there</h1>");
+// document.write("<hr>");
+// document.write("<p>This is my first great test</p>")
 
 // let names = "Jose";
 // let job = "Programmer";
@@ -297,3 +297,59 @@ document.write("<p>This is my first great test</p>")
 // for ( let account in money ){
 //     document.write(`${account} is a  ${money[account]} in Irelang`);
 // }
+
+let gamerScores = [
+    {
+    john: 89,
+    paul: 725,
+    george: 553,
+    robert: 9302,
+    languages: ["spanish", "english", "french"]
+}];
+
+
+console.log(gamerScores)
+
+// ----------------------------Functions
+
+// let day = (prompt("How old am I?"))
+
+// function sayHi(a, b){
+//     if (day == 355){
+//         document.write("Well done")
+//         console.log(a)
+//     }else {
+//         document.write("Not done well")
+//         console.log(b)
+//     }
+// }
+// sayHi("hello", "there")
+
+// ---------------------------- when using the return, this takes the variable outside the functionFunctions
+
+// function sum (a, b){
+//     return a + b
+// }
+// const value = sum(1, 2)
+// console.log(value)
+
+// function expresion reminder
+
+// ------------------------------Guess my number
+// document.querySelector('.message').textContent = ' 🤟 Correct number'
+// document.querySelector('.number').textContent = 13;
+// document.querySelector('.score').textContent = 23;
+// document.querySelector('.guess').value = 24;
+
+// even listerner set
+// event listener handeler function
+document.querySelector('.check').addEventListener('click', function(){
+    document.querySelector('.guess').value
+});
+
+
+
+
+
+
+
