@@ -343,8 +343,19 @@ console.log(gamerScores)
 
 // even listerner set
 // event listener handeler function
+
+const secretNumber = Math.trunc(Math.random() * 20 ) + 1;
+document.querySelector(".number").textContent = secretNumber
+
 document.querySelector('.check').addEventListener('click', function(){
-    document.querySelector('.guess').value
+    const guess = Number (document.querySelector(".guess").value);
+    if (!guess){
+        document.querySelector(".message").textContent = "No number selected"
+    }else if (guess === secretNumber){
+        document.querySelector(".message").textContent = "That is correct!! 🤯 ";
+    }else if (guess != secretNumber){
+        document.querySelector(".message").textContent = "That is not correct!! ☠️ ";
+    }
 });
 
 

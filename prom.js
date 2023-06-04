@@ -19,8 +19,53 @@
 //     document.getElementById("p").innerHTML = "well done";
 // }
 
-let x = 5;
-let y = 5;
-let sum = x + y;
 
-document.getElementById("text").innerHTML = sum;
+
+
+// document.getElementById("sbtn").addEventListener("click", function(){
+//     let username = document.getElementById("user").value;
+//     document.getElementById("output").innerHTML = username;
+//     document.getElementById("greet").innerHTML = "oh hello" + username;
+// })
+
+// let fruits = ["apples", "bananas", "kiwis", "strawberries"]
+
+// for (i = 0; i < fruits.length; i++){
+//   document.write(fruits[i])
+// }
+
+// let attemptedUploads = 0;
+
+// do {
+//     console.log("Attempting upload...");
+//     attemptedUploads++;
+// } while (attemptedUploads < 5);
+
+// console.log("Upload attempts exceeded maximum");
+
+// document.getElementById("sbtn").addEventListener("click", function(){
+//     let username = document.getElementById("user").value;
+//     document.getElementById("output").innerHTML = username;
+    
+// })
+
+
+// document.getElementById("sbtn").addEventListener("click", function(){
+//     const quiz = (prompt("How many days in a year"))
+//     if (quiz < 365){
+//         document.getElementById("output").innerHTML = "No, the year has more days than that"
+//     } else if (quiz > 365){
+//         document.getElementById("output").innerHTML = "No, the year has LESS days than that"
+//     }else {
+//         document.getElementById("output").innerHTML = "Well done"
+//     }
+// })
+
+
+
+
+
+
+
+
+
