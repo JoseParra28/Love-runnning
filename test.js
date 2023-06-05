@@ -352,27 +352,22 @@ document.querySelector('.check').addEventListener('click', function(){
     const guess = Number (document.querySelector(".guess").value);
     if (!guess){
         document.querySelector(".message").textContent = "No number selected 😤";
-    }else if (guess > secretNumber) {
-        if (score > 1){
-            document.querySelector(".message").textContent = "Thats too high 👆";
-            
-        score--;
+    } else if (guess !== secretNumber){
+        if (score > 1 ){
+            document.querySelector(".message").textContent = guess > secretNumber ? "Thats too high 👆" : "No thats too low 👇 ";
+            score--;
         document.querySelector(".score").textContent = score;
         }else {
             document.querySelector(".message").textContent = "You lost the game stupid 💀 ";
             document.querySelector("body").style.backgroundColor = "#a73535";
         }   
-    }else if (guess < secretNumber){
-        document.querySelector(".message").textContent = "No thats too low 👇 ";
-        score--;
-        document.querySelector(".score").textContent = score;
-    }else if (guess == secretNumber){
+    } else if (guess == secretNumber){
         document.querySelector(".message").textContent = "Well done 🥳";
         document.querySelector("body").style.backgroundColor = "#315d28";
         document.querySelector(".number").textContent = secretNumber
     }
 });
-
+//  reset the game
 document.querySelector(".again").addEventListener("click", function(){
     score = 5;
     secretNumber = Math.trunc(Math.random()*20) +1;
