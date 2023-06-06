@@ -13,7 +13,7 @@ body{
     background-color: #3a3a3a;
     /*heading and logo*/   
 }
-/* h1,h2{
+ h1,h2{
     font-family: 'Oswald' sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -403,3 +403,12 @@ header {
   .hidden {
     display: none;
   }
+  .hide {
+    display: none;
+  }
+
+#change{
+    width: 30%;
+    height: 30%;
+    background-color: #634141;
+}

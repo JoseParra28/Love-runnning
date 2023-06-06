@@ -61,43 +61,35 @@
 //     }
 // })
 
-// const modal = document.querySelector('.modal');
-// const overlay = document.querySelector('.overlay');
-// const btnCloseModal = document.querySelector(".cloose-modal");
-// const btnsOpenModal = document.querySelectorAll(".show-modal");
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const btnCloseModal = document.querySelector(".cloose-modal");
+const btnsOpenModal = document.querySelectorAll(".show-modal");
 
-// for(let i = 0; i < btnsOpenModal.length; i++)
-//   btnsOpenModal[i].addEventListener("click", function(){
-//     console.log("button clicked");
-//     modal.classList.remove('hidden');
-//     overlay.classList.remove('hidden');
-//   });
-//   const closeModal = function(){
-//   modal.classList.add('hidden');
-//   modal.classList.add('hidden');
-// };
-
-
-
-// document.addEventListener('keydown', function(e){
-//   if (e.key === 'Escape' && !modal.classList.contains('hidden')){
-//       closeModal();
-//     }
-//   }
-// );
+for(let i = 0; i < btnsOpenModal.length; i++)
+  btnsOpenModal[i].addEventListener("click", function(){
+    console.log("button clicked");
+    modal.classList.remove('hidden');
+    overlay.classList.remove('hidden');
+  });
+  const closeModal = function(){
+  modal.classList.add('hidden');
+  modal.classList.add('hidden');
+};
 
 
 
+document.addEventListener('keydown', function(e){
+  if (e.key === 'Escape' && !modal.classList.contains('hidden')){
+      closeModal();
+    }
+  }
+);
 
+const classBtn = document.querySelector('.class');
 
-
-
-
-
-
-
-
-
-
+document.querySelector(".btn").addEventListener("click", function(){
+  document.querySelector(".hide").style.display = "block";
+})
 
 
