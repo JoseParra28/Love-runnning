@@ -400,7 +400,7 @@ header {
     margin-bottom: 2rem;
   }
 
-  .hidden {
+  .hidden, .hidden-0, .hidden-1 {
     display: none;
   }
   .hide {

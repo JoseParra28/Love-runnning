@@ -86,10 +86,34 @@ document.addEventListener('keydown', function(e){
   }
 );
 
-const classBtn = document.querySelector('.class');
 
-document.querySelector(".btn").addEventListener("click", function(){
-  document.querySelector(".hide").style.display = "block";
-})
+let fruit = ["apples", "bananas", "pears"];
+let parra = document.querySelector(".parra");
+
+
+
+document.getElementById("submit").addEventListener("click", function(){
+  let input = document.getElementById("fruitInp").value;
+  
+  if (input == fruit[0]){
+    document.getElementById("fruitList").textContent = input + " are super delicious";
+    parra.classList.remove("hidden")
+  }else if (input == fruit[1]){
+    document.getElementById("fruitList").textContent = input + " are super good for you";
+    
+  }else if (input == fruit[2]) {
+    document.getElementById("fruitList").textContent = "I actually don't like " + input;
+    
+  }else if (input == 0) {
+    document.getElementById("fruitList").textContent = "You havent selected anything";
+  }else {
+    document.getElementById("fruitList").textContent = "I don't know that fruit";
+  }
+});
+    
+  
+
+
+
 
 
