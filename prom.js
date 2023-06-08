@@ -110,6 +110,41 @@ document.getElementById("submit").addEventListener("click", function(){
     document.getElementById("fruitList").textContent = "I don't know that fruit";
   }
 });
+
+const questionContainer = document.getElementById("questions");
+const responseContainer = document.getElementById("response");
+const answer = document.getElementById("answer");
+
+let questions = [
+  {
+    promt: "What color are apples?\n(a) Red/Green\n\(b) Purple\n(c) Orange",
+    answer: "a"
+},
+{
+  promt: "What color are kiwis?\n(a) Green\n\(b) Purple\n(c) Blue",
+  answer: "b"
+},
+{
+  promt: "What color are bananas?\n(a) Red/Green\n\(b) Purple\n(c) Yellow",
+  answer: "c"
+}
+];
+let score = 0;
+
+for (let i = 0; i < questions.length; i ++){
+  let response = window.prompt(questions[i].promt)
+  if (response == questions[i].answer){
+    
+    score++;
+    alert("correct!")
+  }else {
+    alert("Wrong!")
+  }
+}
+alert("You got" + score + "/" + questions.length)
+
+
+
     
   
 
