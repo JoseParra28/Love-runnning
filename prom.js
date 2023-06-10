@@ -176,6 +176,35 @@
 //   })
 // } while (condition);
 
+// Sending messages
+
+function max(num1, num2, num3){
+  if (num1 >= num2 && num1 >= num3){
+    return num1;
+  }else if (num2 >= num1 && num2 >= num3){
+    return num2;
+  }else {
+    return num3
+  }
+}
+if ("compu" != "compu"){
+  document.write("true");
+}
+
+
+
+
+
+
+
+
+// button.addEventListener("click", function(){
+//   let newMsg = document.createElement("p");
+//   newMsg.innerHTML = textbox.value;
+//   messages.appendChild(newMsg);
+//   textbox.value = " ";
+
+// });
 
 
 
