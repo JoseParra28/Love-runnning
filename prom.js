@@ -61,92 +61,121 @@
 //     }
 // })
 
-const modal = document.querySelector('.modal');
-const overlay = document.querySelector('.overlay');
-const btnCloseModal = document.querySelector(".cloose-modal");
-const btnsOpenModal = document.querySelectorAll(".show-modal");
+// const modal = document.querySelector('.modal');
+// const overlay = document.querySelector('.overlay');
+// const btnCloseModal = document.querySelector(".cloose-modal");
+// const btnsOpenModal = document.querySelectorAll(".show-modal");
 
-for(let i = 0; i < btnsOpenModal.length; i++)
-  btnsOpenModal[i].addEventListener("click", function(){
-    console.log("button clicked");
-    modal.classList.remove('hidden');
-    overlay.classList.remove('hidden');
-  });
-  const closeModal = function(){
-  modal.classList.add('hidden');
-  modal.classList.add('hidden');
-};
-
-
-
-document.addEventListener('keydown', function(e){
-  if (e.key === 'Escape' && !modal.classList.contains('hidden')){
-      closeModal();
-    }
-  }
-);
-
-
-let fruit = ["apples", "bananas", "pears"];
-let parra = document.querySelector(".parra");
+// for(let i = 0; i < btnsOpenModal.length; i++)
+//   btnsOpenModal[i].addEventListener("click", function(){
+//     console.log("button clicked");
+//     modal.classList.remove('hidden');
+//     overlay.classList.remove('hidden');
+//   });
+//   const closeModal = function(){
+//   modal.classList.add('hidden');
+//   modal.classList.add('hidden');
+// };
 
 
 
-document.getElementById("submit").addEventListener("click", function(){
-  let input = document.getElementById("fruitInp").value;
+// document.addEventListener('keydown', function(e){
+//   if (e.key === 'Escape' && !modal.classList.contains('hidden')){
+//       closeModal();
+//     }
+//   }
+// );
+
+
+// let fruit = ["apples", "bananas", "pears"];
+// let parra = document.querySelector(".parra");
+
+
+
+// document.getElementById("submit").addEventListener("click", function(){
+//   let input = document.getElementById("fruitInp").value;
   
-  if (input == fruit[0]){
-    document.getElementById("fruitList").textContent = input + " are super delicious";
-    parra.classList.remove("hidden")
-  }else if (input == fruit[1]){
-    document.getElementById("fruitList").textContent = input + " are super good for you";
+//   if (input == fruit[0]){
+//     document.getElementById("fruitList").textContent = input + " are super delicious";
+//     parra.classList.remove("hidden")
+//   }else if (input == fruit[1]){
+//     document.getElementById("fruitList").textContent = input + " are super good for you";
     
-  }else if (input == fruit[2]) {
-    document.getElementById("fruitList").textContent = "I actually don't like " + input;
+//   }else if (input == fruit[2]) {
+//     document.getElementById("fruitList").textContent = "I actually don't like " + input;
     
-  }else if (input == 0) {
-    document.getElementById("fruitList").textContent = "You havent selected anything";
-  }else {
-    document.getElementById("fruitList").textContent = "I don't know that fruit";
-  }
-});
+//   }else if (input == 0) {
+//     document.getElementById("fruitList").textContent = "You havent selected anything";
+//   }else {
+//     document.getElementById("fruitList").textContent = "I don't know that fruit";
+//   }
+// });
 
-const questionContainer = document.getElementById("questions");
-const responseContainer = document.getElementById("response");
-const answer = document.getElementById("answer");
 
-let questions = [
-  {
-    promt: "What color are apples?\n(a) Red/Green\n\(b) Purple\n(c) Orange",
-    answer: "a"
-},
-{
-  promt: "What color are kiwis?\n(a) Green\n\(b) Purple\n(c) Blue",
-  answer: "b"
-},
-{
-  promt: "What color are bananas?\n(a) Red/Green\n\(b) Purple\n(c) Yellow",
-  answer: "c"
-}
-];
-let score = 0;
+// let questions = [
+//   {
+//     promt: "What color are apples?\n(a) Red/Green\n\(b) Purple\n(c) Orange",
+//     answer: "a"
+// },
+// {
+//   promt: "What color are kiwis?\n(a) Green\n\(b) Purple\n(c) Blue",
+//   answer: "b"
+// },
+// {
+//   promt: "What color are bananas?\n(a) Red/Green\n\(b) Purple\n(c) Yellow",
+//   answer: "c"
+// }
+// ];
+// let score = 0;
 
-for (let i = 0; i < questions.length; i ++){
-  let response = window.prompt(questions[i].promt)
-  if (response == questions[i].answer){
+// for (let i = 0; i < questions.length; i ++){
+//   let response = window.prompt(questions[i].promt)
+//   if (response == questions[i].answer){
     
-    score++;
-    alert("correct!")
-  }else {
-    alert("Wrong!")
-  }
-}
-alert("You got" + score + "/" + questions.length)
+//     score++;
+//     alert("correct!")
+//   }else {
+//     alert("Wrong!")
+//   }
+// }
+// alert("You got" + score + "/" + questions.length)
 
 
 
-    
+// const questionElement = document.getElementById("question");
+// const answerBtn = document.getElementById("answer-btn");
+// const nextBtn = document.getElementById("next-btn");
+
+// let currentQuestionIndex = 0;
+// let score = 0;
+
+// function startQuiz(){
+//   currentQuestionIndex = 0;
+//   score = 0;
+//   nextBtn.innerHTML = "Next";
+// };
+
+// for (let i = 0; i < questions.length; i++){
+//   let showQuestion = questionElement[i] = questions;
+//   document.getElementById("question").textContent = showQuestion;
+// }
+
+
+// do {
+//   let score = 0;
+//   document.querySelector("#addBtn").addEventListener("click", function(){
+//     document.querySelector(".answerP").textContent = "Adding...";
+//     score++;
+//     document.querySelector("#score").textContent = score
+//   })
   
+//   document.querySelector("#removeBtn").addEventListener("click", function(){
+//     document.querySelector(".answerP").textContent = "Removing...";
+//     score--;
+//     document.querySelector("#score").textContent = score
+//   })
+// } while (condition);
+
 
 
 
