@@ -13,11 +13,13 @@ body{
     background-color: #3a3a3a;
     /*heading and logo*/   
 }
- h1,h2{
+ h1,h2, h3 {
     font-family: 'Oswald' sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #f3f3f3; 
+    display: flex;
+    justify-content: center;
 }
 #logo {
     float: left;
@@ -411,4 +413,8 @@ header {
     width: 30%;
     height: 30%;
     background-color: #634141;
+}
+#inputs {
+    display: flex;
+    justify-content: center;
 }

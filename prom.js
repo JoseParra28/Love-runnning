@@ -178,26 +178,6 @@
 
 // Sending messages
 
-function max(num1, num2, num3){
-  if (num1 >= num2 && num1 >= num3){
-    return num1;
-  }else if (num2 >= num1 && num2 >= num3){
-    return num2;
-  }else {
-    return num3
-  }
-}
-if ("compu" != "compu"){
-  document.write("true");
-}
-
-
-
-
-
-
-
-
 // button.addEventListener("click", function(){
 //   let newMsg = document.createElement("p");
 //   newMsg.innerHTML = textbox.value;
@@ -205,6 +185,95 @@ if ("compu" != "compu"){
 //   textbox.value = " ";
 
 // });
+
+// let phase = "is amazing"
+// let profile = {
+//   name: "Jose ",
+//   surname: "Parra",
+//   ocupation: "Analist",
+//   hobbies: "Gym and learning",
+//   age: 29,
+//   printName: function(){
+//     document.write("><h1>" + this.hobbies + phase + "</h1>");
+//   }
+// };
+
+// profile.printName();
+
+// let myMovie = {
+//   tittle: "Social network",
+//   realiseYear: "2010",
+//   duration: 2.5,
+//   actors: [
+//     {
+//       name: "Jose Parra",
+//       birthday: new Date("September 4 1993"),
+//       hometown: "Matacaballo, Rosario de paya" 
+//     },
+//     {
+//       name: "Miguel Parra",
+//       birthday: new Date("September 4 1994"),
+//       hometown: "Matacaballo, Venezuela" 
+//     },
+//     {
+//       name: "Jesus Parra",
+//       birthday: new Date("September 4 1994"),
+//       hometown: "Matacaballo, Venezuela" 
+//     },
+//   ]
+// }
+
+// document.write("><h1>" + myMovie.actors[0].name + "</h1>")
+
+// let password = "wordpass";
+// let response;
+// let entryCount = 0;
+// let entryLimit = 3;
+// let error = false;
+
+
+// while(response != password && !error){
+//   if (entryCount < entryLimit){
+//     response = window.prompt("Enter your password");
+//     entryCount++;
+//   }else {
+//     error = true;
+//   } 
+// }
+// if (error){
+//   alert("You've enter your password too many times");
+// }else {
+//   alert("done");
+// }
+
+let answers = ["blue", "black", "green", "yellow"];
+let score = 0;
+
+
+document.getElementById("submitBtn").addEventListener("click", function(){
+    let answerInput = document.getElementById("answerInput").value;
+
+    if (answerInput == answers[0] ){
+        document.getElementById("output").textContent = "Correct!";
+        score++;
+        score.document.getElementById("scoreTracker").textContent = score;
+        answerInput = "";
+    }else if (answerInput == answers[1]){
+        document.getElementById("output").textContent = "Not very correct!";
+        answerInput = "";
+    }else if (answerInput == answers[2] || answers[3]){
+        document.getElementById("output").textContent = "Wrong!!";
+        answerInput = "";
+    }else if (answerInput == 0) {
+        document.getElementById("output").textContent = "You haven't selected anything";
+        answerInput = "";
+    }else {
+        document.getElementById("output").textContent = "I don't know that color";
+        answerInput = "";
+    }
+});
+
+
 
 
 
